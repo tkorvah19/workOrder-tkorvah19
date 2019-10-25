@@ -21,7 +21,7 @@ if (!isset($errorMessageLogin)) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <title></title>
     </head>
     <main class="mainlogin">

@@ -80,7 +80,7 @@ $password1 = '';
 
 
                 </div>
-                <div id="rdButton">
+                <div id="rdButton"> 
                     <input type="radio" name="user_type" value="administrators"> Administrators<br>
                     <input type="radio" name="user_type" value="Engineers"> Engineers<br>
                     <input type="radio" name="user_type" value="Enployees"> Employees<br>
