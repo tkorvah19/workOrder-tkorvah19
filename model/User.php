@@ -13,22 +13,21 @@
  */
 class User {
     //put your code here
-    private $userID, $firstName, $lastName, $userName, $email, $password, $role;
+    private $userID, $firstName, $lastName, $userName, $password, $phone, $role, $email;
     
-    public function __construct($firstName, $lastName, $userName, $email, $password, $userID = -1, $role) {
+    public function __construct($userID = -1, $firstName, $lastName, $userName, $password, $phone, $role, $email) {
         $this->userID = $userID;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->userName = $userName;
-        $this->email = $email;
         $this->password = $password;
+        $this->phone = $phone;
         $this->role = $role;
+        $this->email = $email;
     }
     
     
-    public function getPassword(){
-        return $this->password;
-    }
+   
     
     public function getUserID() {
         return $this->userID;
@@ -50,8 +49,16 @@ class User {
         return $this->email;
     }
     
+     public function getPassword(){
+        return $this->password;
+    }    
+    
     public function getRole(){
         return $this->role;
+    }
+    
+     public function getPhone(){
+        return $this->password;
     }
 
     public function setUserID($userID) {
@@ -80,6 +87,10 @@ class User {
     
     public function setRole($role) {
         $this->role = $role;
+    }
+    
+    public function setPhone($phone) {
+        $this->phone = $phone;
     }
 
 

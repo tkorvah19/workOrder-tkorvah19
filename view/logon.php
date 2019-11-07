@@ -28,7 +28,7 @@ if (!isset($errorMessageLogin)) {
         <body>
 
             <h1>Login Page</h1>
-
+            <br>
             <form action="index.php" method="post">
                 <input type="hidden" name="action" value="login">
 
@@ -56,7 +56,7 @@ if (!isset($errorMessageLogin)) {
                         <input type="submit" value="Login"><br>
                     </div>
 
-                    <a href="index.php?action=show_form">Create an Account</a><br>
+                    <a href="index.php?action=registriction">Create an Account</a><br>
                     </form>
                     </body>
                     </main>

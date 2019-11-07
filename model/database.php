@@ -2,7 +2,7 @@
 
 <?php
 class Database {
-    private static $dsn = 'mysql:host=localhost;dbname=workOrder';
+    private static $dsn = 'mysql:host=localhost;dbname=workorder';
     private static $username = 'root';
     private static $password = '';
     private static $db;

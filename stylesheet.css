@@ -10,62 +10,75 @@ and open the template in the editor.
 
 /*Layout*/
 body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border: 1px solid black;
-  font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
 }
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 header {
-  display: flex;
-  order: 0;
-  justify-content: space-between;
-  background: #2e8B57;
-  align-items: center;
+    display: flex;
+    order: 0;
+    justify-content: space-between;
+    background: #2e8B57;
+    align-items: center;
 }
 main > *, header, footer {
-  margin: 4px;
-  padding: 5px;
-  border-radius: 7px;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7px;
 }
 main {
-  display: flex;
-  order: 1;
-  flex-basis: 800px;
-  
+    display: flex;
+    order: 1;
+    flex-basis: 800px;
+
 }
 article {
-  order: 1;
-  background:  #D3D3D3;
-  flex: 4 0 60%;
+    order: 2;
+    background:  #D3D3D3;
+    flex: 4 0 60%;
 }
-nav {
-  order:0;
-  background: #A9A9A9;
-  flex: 1 1 20%;
+#nav {
+    order:0;
+    background: #A9A9A9;
+    flex: 1 1 20%;
 }
 
 footer {
-  order: 3;
-  background: #2e8B57;
+    order: 3;
+    background: #2e8B57;
 }
 header,footer {
-  flex-basis: 100px;
+    flex-basis: 100px;
 }
 @media all and (max-width: 640px) {
-  main {
-    flex-direction: column;
-    flex-grow: 2;
-  }
-  nav {
-    order: 1;
-  }
-  header, footer {
-    flex-basis: 50px;
-  }
+    main {
+        flex-direction: column;
+        flex-grow: 2;
+    }
+    #nav {
+        order: 1;
+    }
+    header, footer {
+        flex-basis: 50px;
+    }
+
+    #nav section{
+        flex-basis: 100%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+
+
+
+
 }
 
