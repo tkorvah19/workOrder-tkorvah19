@@ -13,6 +13,17 @@
  */
 class Engineer extends User {
 
+    private $engID;
+    
+    
+    
+     public function __construct($firstName, $lastName, $userName, $password, $phone, $role, $email, $engID = -1) {
+		
+        parent::__construct($firstName, $lastName, $userName, $password, $phone, $role, $email);
+        $this -> engID = $engID;
+	}
+
+
     //put your code here
 
     public function getEngID() {

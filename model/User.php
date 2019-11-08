@@ -13,10 +13,10 @@
  */
 class User {
     //put your code here
-    private $userID, $firstName, $lastName, $userName, $password, $phone, $role, $email;
+    private $firstName, $lastName, $userName, $password, $phone, $role, $email;
     
-    public function __construct($userID = -1, $firstName, $lastName, $userName, $password, $phone, $role, $email) {
-        $this->userID = $userID;
+    public function __construct($firstName, $lastName, $userName, $password, $phone, $role, $email) {
+        
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->userName = $userName;
@@ -29,10 +29,7 @@ class User {
     
    
     
-    public function getUserID() {
-        return $this->userID;
-    }
-
+   
     public function getFirstName() {
         return $this->firstName;
     }
@@ -59,10 +56,6 @@ class User {
     
      public function getPhone(){
         return $this->password;
-    }
-
-    public function setUserID($userID) {
-        $this->userID = $userID;
     }
 
     public function setFirstName($firstName) {

@@ -13,6 +13,15 @@
  */
 class Employee extends User{
     //put your code here
+    private $empID;
+    
+     public function __construct($firstName, $lastName, $userName, $password, $phone, $role, $email, $empID = -1) {
+		
+        parent::__construct($firstName, $lastName, $userName, $password, $phone, $role, $email);
+        $this -> admID = $empID;
+	}
+    
+    
     
     
      public function getEmpID() {
