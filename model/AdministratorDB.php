@@ -59,7 +59,23 @@ class AdministratorDB {
 
         return $user_name;
     }
+    
 
+    public static function checkPhone($phone) {
+        $db = Database::getDB();
+        $query = 'SELECT * FROM admin WHERE phone=:phone';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':phone', $phone);
+        $statement->execute();
+        $eMail = $statement->fetch();
+        $statement->closeCursor();
+
+        $admiPhone = $eMail['Phone'];
+
+        return $admiPhone;
+    }
+    
+    
     public static function checkEmail($email) {
         $db = Database::getDB();
         $query = 'SELECT * FROM admin WHERE email=:email';
@@ -73,6 +89,8 @@ class AdministratorDB {
 
         return $user_email;
     }
+    
+    
 
     public static function addAdmin($admin) {
         $db = Database::getDB();

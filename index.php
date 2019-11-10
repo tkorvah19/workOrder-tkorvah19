@@ -8,8 +8,6 @@ Date: 10/25/2019
 
 require_once('model/User.php');
 require_once('model/database.php');
-//require_once('model/UserDB.php');
-//require_once('model/fitnessData_db.php');
 require_once('model/Administrator.php');
 require_once('model/AdministratorDB.php');
 
@@ -130,8 +128,8 @@ switch ($action) {
         }
 
 
-        if ($phone == FALSE) {
-            $errorMessagePassword = 'Must input a valid phone.';
+        if ($password == FALSE) {
+            $errorMessagePassword = 'Must input a valid password.';
         } else if ($password != $password1) {
             $errorMessagePassword = 'Passwords do not match.';
         } else if (strlen($password) < 10) {
@@ -173,12 +171,12 @@ switch ($action) {
             include('view/user_registration.php');
             exit();
         }
-
-        $user = new User($firstName, $lastName, $userName, $email, $hash);
-        UserDB::addUser($user);
-        $user = UserDB::getUser($userName);
-        $_SESSION['userID'] = $user->getUserID();
-        include 'view/confirmation.php';
+            
+        $admin = new Administrator($firstName, $lastName, $userName, $phone, $role, $email, $hash);
+        AdministratorDB::addAdmin($admin);
+        $admin = AdministratorDB::getAdministrator($userName);
+        $_SESSION['admID'] = $admin->getAdmID();
+        include 'view/Confirmation.php';
         die();
         break;
 
