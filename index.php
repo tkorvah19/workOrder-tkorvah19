@@ -64,7 +64,19 @@ switch ($action) {
         die();
         break;
     
+    case 'show_Login':
+
+        include'view/admin_logon.php';
+        die();
+        break;
+    
     case 'registriction':
+
+        include'view/user_registration.php';
+        die();
+        break;
+    
+    case 'show_form':
 
         include'view/user_registration.php';
         die();
