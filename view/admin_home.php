@@ -16,31 +16,26 @@ Date: 10/25/2019
         ?>
 
         <header>
-            Welcome to the Work Order Management System
+            Welcome to Administrators Home Page
         </header>
         <main>
 
             <article>
-
+                <h2>Work Order Items</h2>
+                <p>Create Work Order</p>
+                <br>
+                
+                <h2>Manage Staff Profile</h2>
+                <p>Create Profile</p>
+                <p>Manage Staff Profile
             </article>
             <div id="nav">
                 <section>
-                    <a>Home</a>
-                </section>
-                <br>
-                <section>
                     
-                     <a href="index.php?action=login_admin">Administrator</a>
+                     <a href="index.php?action=Home">Home</a>
                     
                 </section>
-                <br>
-                <section>
-                    <a href="index.php?action=login">Engineer</a>
-                </section>
-                <br>
-                <section>
-                    <a href="index.php?action=login">Employee</a>
-                </section>
+                
 
             </div>
 

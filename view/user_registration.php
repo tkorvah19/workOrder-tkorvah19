@@ -110,7 +110,7 @@ $password1 = '';
                     <label>&nbsp;</label>
                     <input type="submit" value="register"><br>
                 </div>
-                <a href="index.php?action=nothing">Back to Login Page</a><br>
+                <a href="index.php?action=login_admin">Back to Login Page</a><br>
             </form>
 
         </body>

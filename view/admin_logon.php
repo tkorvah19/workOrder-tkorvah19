@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -30,7 +29,7 @@ if (!isset($errorMessageLogin)) {
             <h1>Login Page</h1>
             <br>
             <form action="index.php" method="post">
-                <input type="hidden" name="action" value="login">
+                <input type="hidden" name="action" value="login_admin">
 
 
                 <div id="data">
@@ -55,12 +54,8 @@ if (!isset($errorMessageLogin)) {
                         <label>&nbsp;</label>
                         <input type="submit" value="Login"><br>
                     </div>
-                    
-                    
-                    <br>
-                    
-                    <a href="index.php?action=Home">Go Back to Home Page</a><br>
 
+                    <a href="index.php?action=registriction">Create an Account</a><br>
                     </form>
                     </body>
                     </main>

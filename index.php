@@ -46,9 +46,21 @@ switch ($action) {
         die();
         break;
     
+    case 'Home':
+
+        include'view/home.php';
+        die();
+        break;
+    
     case 'login':
 
         include'view/logon.php';
+        die();
+        break;
+    
+    case 'login_admin':
+
+        include'view/admin_logon.php';
         die();
         break;
     
@@ -122,9 +134,9 @@ switch ($action) {
         }
         
         if ($role == FALSE) {
-            $errorMessageEmail = 'Must input role.';
+            $errorMessageRole = 'Must input role.';
         } else {
-            $errorMessageEmail = '';
+            $errorMessageRole = '';
         }
 
 
@@ -176,7 +188,7 @@ switch ($action) {
         AdministratorDB::addAdmin($admin);
         $admin = AdministratorDB::getAdministrator($userName);
         $_SESSION['admID'] = $admin->getAdmID();
-        include 'view/Confirmation.php';
+        include 'view/confirmation.php';
         die();
         break;
 

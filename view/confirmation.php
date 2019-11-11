@@ -7,7 +7,7 @@ and open the template in the editor.
 <<html>
     <head>
         <meta charset="UTF-8">
-        <title>Fitness Tracker</title>
+        <title>Work Order Management Systems</title>
         <link rel="stylesheet" type="text/css" href="style1.css" >
     </head>
     <main>
@@ -18,17 +18,23 @@ and open the template in the editor.
 
                 <h1> Registration Completed </h1>
 
-                <label> First Name:</label>
-                <span> <?php xecho($user->getFirstName()); ?> </span> <br>
+                <label> First Name: </label>
+                <span> <?php xecho($admin->getFirstName()); ?> </span> <br>
 
-                <label> Last Name:</label>
-                <span> <?php xecho($user->getLastName()); ?> </span><br>
+                <label> Last Name: </label>
+                <span> <?php xecho($admin->getLastName()); ?> </span><br>
 
-                <label> User Name:</label>
-                <span> <?php xecho($user->getUserName()); ?> </span><br>
+                <label> User Name: </label>
+                <span> <?php xecho($admin->getUserName()); ?> </span><br>
 
-                <label> Email Address:</label>
-                <span> <?php xecho($user->getEmail()); ?> </span><br>
+                <label> Email Address: </label>
+                <span> <?php xecho($admin->getEmail()); ?> </span><br>
+                
+                <label> Phone Number: </label>
+                <span> <?php xecho($admin->getPhone()); ?> </span><br>
+                
+                <label> Email Address: </label>
+                <span> <?php xecho($admin->getRole()); ?> </span><br>
 
                 <a href="index.php?action=show_form">Registration Page</a> <br>
                 <a href="index.php?action=show_Login">Go to Login</a>
