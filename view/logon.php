@@ -60,6 +60,9 @@ if (!isset($errorMessageLogin)) {
                     <br>
                     
                     <a href="index.php?action=Home">Go Back to Home Page</a><br>
+                    <br>
+                    
+                    <a href="#">Contact your administrator if your forgot your UserID or Password</a><br>
 
                     </form>
                     </body>
